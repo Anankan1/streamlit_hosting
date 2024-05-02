@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from openai import OpenAI
 from send_email import send_email
+import streamlit as st
 
 def generate_profile(profile_name):
     # Authenticate using any LinkedIn account credentials
@@ -40,7 +41,7 @@ def generate_email():
     # profile_details=generate_profile(profile_name)
 
     # Set your OpenAI API key
-    
+    api_key=st.secrets["openai_apikey"]
     client=OpenAI(api_key=api_key)
     # Define the website URL for analysis
     website_url = website # Replace with the actual website URL
