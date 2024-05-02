@@ -1,1 +1,2 @@
 linkedin-api==2.1.1
+openai==1.23.6
