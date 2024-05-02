@@ -41,7 +41,7 @@ def generate_email():
     # profile_details=generate_profile(profile_name)
 
     # Set your OpenAI API key
-    api_key=st.secrets["openai_apikey"]
+    api_key=st.secrets['openai_apikey']
     client=OpenAI(api_key=api_key)
     # Define the website URL for analysis
     website_url = website # Replace with the actual website URL
